@@ -1,2 +1,2 @@
 # hemeets
-밴드hemeets 소개 웹페이지
+밴드 HeMeets 소개 웹페이지
