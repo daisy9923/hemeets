@@ -1,84 +1,126 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <style>
+    html,
+    body,
+    div,
+    a,
+    ol,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    body * {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
     body {
-        margin: 0;
-        background-color: rgb(178, 207, 216);
+        background-color: rgb(235, 245, 247);
     }
 
-    h1 {
-        font-size: 100px;
-        text-align: center;
-        border-bottom: 10px rgb(126, 167, 206) solid;
-        margin: 15px 0 0 0;
-        padding-bottom: 30px;
-        text-decoration: none;
-        color: rgb(93, 129, 197);
+    .hemeets-windows header>.band-name {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 20px;
+        color: rgb(44, 197, 172);
     }
 
-    #grid ol {
-        border-right: 10px rgb(126, 167, 206) solid;
-        margin: 0;
+    .hemeets-windows header>.util {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 20px;
+        color: rgb(44, 128, 197);
+
     }
 
-    a {
-        text-decoration: none;
-        color: rgb(20, 55, 107);
+    .hemeets-windows header>.util>.sns-list {
+        display: inline-block;
+        position: relative;
+        margin-right: 23px;
     }
 
-    #grid {
-        display: grid;
-        grid-template-columns: 150px 1fr;
+    .hemeets-windows header>.util>.sns-list>ul {
+        display: flex;
     }
 
-    #article {
-        padding: 0px 30px;
+    .hemeets-windows header>.util>.sns-list>ul>li {
+        flex: 0 0 auto;
+        padding: 0 10px;
+    }
+
+    .hemeets-windows header>.util>.sns-list>ul>li>a {
+        display: block;
+        position: relative;
+        width: 25px;
+    }
+
+    .hemeets-windows header>.util>.date-time {
+        display: inline-block;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .hemeets-windows header>.util>.date-time>.wrap {
+        display: flex;
     }
 </style>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeMeets</title>
-    <meta charset="utf-8">
 </head>
 
 <body>
-    <h1><a href="index.html">HeMeets</a></h1>
-    <div id="grid">
-        <ol>
+    <div id="container" class="hemeets-windows">
+        <header>
+            <div class="band-name">HEMEETS</div>
+            <div class="util">
+                <div class="sns-list">
+                    <ul>
+                        <li><a href="https://www.youtube.com/@HeMeets_official" rel="noopener noreferrer"
+                                target="_blank"><img src="imgs/windows/pc/icon-youtube.png" alt="youtube"></a></li>
+                        <li><a href="https://www.instagram.com/hemeets_official/" rel="noopener noreferrer"
+                                target="_blank"><img src="imgs/windows/pc/icon-instagram.png" alt="instagram"></a></li>
+                        <li><a href="https://www.facebook.com/hemeets/" rel="noopener noreferrer" target="_blank"><img
+                                    src="imgs/windows/pc/icon-facebook.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+                <div class="date-time">
+                    <div class="wrap">
+                        <div class="date">
+                            "FRI"
+                            "JUN"
+                            "6"
+                        </div>
+                        <div class="time">11:42 AM</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
             <br>
-            <li><a href="index.html">MAIN</a></li>
-            <li><a href="1.html">ABOUT</a></li>
-            <li><a href="2.html">NOTICE</a></li>
-            <li><a href="3.html">ALBUM</a></li>
-            <li><a href="4.html">MV</a></li>
-            <li><a href="5.html">SCHEDULE</a></li>
-            <li><a href="6.html">CONCERT</a></li>
-        </ol>
-        <div id="article">
-            <h2>HeMeets</h2>
-            <p>
-                <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 speicification">Hypertext Markup
-                    Language (HTML)</a>is the standard markup language for <strong>creating <u>web</u> pages</strong>
-                and web applications. Web browsers receive HTML documents from a web server or from local storage and
-                render them into multimedia web pages. HTML describes the structure of a web page semantically and
-                originally included cues for the appearance of the document.
-            </p>
-            <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs,
-                images and other objects, such as interactive forms, may be embedded into the rendered create structured
-                documents by denoting structural semantics for text such as headings, paragraphs, lists, written using
-                angle brackets.
-            </p>
-            <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs,
-                images and other objects, such as interactive forms, may be embedded into the rendered create structured
-                documents by denoting structural semantics for text such as headings, paragraphs, lists, written using
-                angle brackets.
-            </p>
-            <p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs,
-                images and other objects, such as interactive forms, may be embedded into the rendered create structured
-                documents by denoting structural semantics for text such as headings, paragraphs, lists, written using
-                angle brackets.
-            </p>
-        </div>
+            <br>
+            <br>
+            <!--
+            <div class="btn-photo-folder">PHOTOS</div>
+            <div class="btn-mv-folder">MV</div>
+            <div class="btn-letter">LETTER</div>
+            <div class="btn-test">TEST</div>
+            -->
+        </main>
     </div>
 </body>
 
