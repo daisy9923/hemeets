@@ -9,7 +9,7 @@
     <title>HeMeets</title>
 </head>
 
-<body>
+<body onload="showClock()">
     <div id="container" class="hemeets-windows">
         <header>
             <div class="band-name">HEMEETS</div>
@@ -51,6 +51,26 @@
         month = date.getMonth() + 1;
         day = date.getDate();
         document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+        function showClock() {
+            var currentDate = new Date();
+            var clock = document.getElementById('clock');
+            var msg = " ";
+            if (currentDate.getHours() > 12) {      //시간이 12보다 크다면 오후 아니면 오전
+                msg += "PM ";
+                msg += currentDate.getHours() - 12 + ":";
+            }
+            else {
+                msg += "AM ";
+                msg += currentDate.getHours() + ":";
+            }
+
+            msg += currentDate.getMinutes() + ":";
+            msg += currentDate.getSeconds();
+
+            clock.innerText = msg;
+
+            setTimeout(showClock, 1000);  //1초마다 갱신
+        }
     </script>
 </body>
 

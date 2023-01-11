@@ -73,3 +73,7 @@ body {
 .hemeets-windows header>.util>.date-time>.wrap {
     display: flex;
 }
+
+.hemeets-windows header>.util>.date-time>.wrap>.date {
+    margin-right: 10px;
+}
